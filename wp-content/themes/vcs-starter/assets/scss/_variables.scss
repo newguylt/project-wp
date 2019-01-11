@@ -1,0 +1,48 @@
+//fonts
+
+$lato: 'Lato', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$martelsans: 'Martel Sans', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+
+
+//colors
+
+$gradient1: rgba(51, 169, 224, 0.8);
+$gradient2: rgba(146, 39, 143, 0.8);
+$white: #ffffff;
+$black: #191919;
+$blacker: #000000;
+$whitevar: #fefefe;
+$lightblue: #41bef2;
+$darkblue: #0b5fa6;
+$purplelighter: #9d3f99;
+$purpledarker: #92298d;
+$lightblue: rgba(51, 168, 224, 0.7);
+$lightblue2: #33a8e0;
+$darkpurple: #343740;
+$darkgreen: #686b6a;
+$gray: #b3adad;
+$grayunderline: #b0b1b5;
+$grayvar1: #fbfbfc;
+$grayvar2: #cccccc;
+$grayvar3: #f9f9f9;
+$dustygray: #969595;
+$tundora: #4a4a4a;
+$purpledarker2: #9900cc;
+$dodgerblue: #05a5ff;
+$dovegray: #6b6b6b;
+
+//mixins
+@mixin breakpoint($point) {
+	@if $point == phone {
+		@media (max-width: 767px) { @content; }
+	}
+}
+
+//underline animated
+
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);

@@ -1,0 +1,200 @@
+.inbetween-section{
+	background-color: $darkpurple;
+	p{
+		font-family: $lato;
+		font-weight: 100;
+		font-size: 1.5rem;
+		line-height: 1.375;
+		color: $white;
+		text-align: center;
+		padding: 0 5px 0 5px;
+	}
+	.inbetween-container{
+	padding: 90px 0;
+	}
+}
+.call-to-action{
+	div{
+		align-items: center;
+		padding: 80px 0;
+		h3{
+			font-family: $montserrat;
+			font-weight: 700;
+			font-size: 2.8125rem;
+			letter-spacing: -0.050em;
+			text-align: center;
+			color: $purpledarker;
+			padding-bottom: 30px;
+		}
+		p{
+			font-family: $lato;
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.5625;
+			text-align: center;
+			color: $darkgreen;
+			padding-bottom: 25px;
+		}
+		button{
+			font-family: $lato;
+			font-weight: 400;
+			font-size: 1.25rem;
+			line-height: 1.2;
+			letter-spacing: 0.015em;
+			color: $white;
+			background-color: $purpledarker;
+			border-radius: 3px;
+			border:none;
+			padding: 12px 33px;
+		}
+	}
+}
+.news-post-container{
+	flex-wrap: wrap;
+}
+.news-posts{
+	// background-image: url("../images/inbetweener-1.jpg");
+	width: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.image-gradient{
+		background: linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+		width: 50%;
+	}
+	.news-post{
+		padding-left: 54px;
+		padding-top: 46px;
+		padding-bottom: 46px;
+		padding-right: 80px;
+		width: 50%;
+		background-color: $whitevar;
+		text-align: left;
+		h5{
+			font-family: $montserrat;
+			font-weight: 700;
+			font-size: 1.125rem;
+			line-height: 1.7777;
+			color: $darkpurple;
+			position: relative;
+			margin-bottom: 55px;
+			text-transform: uppercase;
+			&::after{
+				position: absolute;
+				content: '';
+				width: 50px;
+				height: 1px;
+				background-color: $grayunderline;
+				left: 0;
+				bottom: -30px;
+			}
+		}
+		p{
+			font-family: $lato;
+			font-weight: 400;
+			font-size: 1.125rem;
+			line-height: 1.4444;
+			color: $darkpurple;
+			margin-bottom: 31px;
+		}
+		a{
+			font-family: $opensans;
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 2.1875;
+			color: $purpledarker;
+			text-transform: uppercase;
+
+		}
+	}
+}
+.inbetween-quotes{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: $darkpurple;
+	.owl-dots{
+		padding-top: 50px;
+		.owl-dot{
+			&.active{
+				span{
+					background: $white;
+				}
+			}
+			span{
+				background: $darkpurple;
+				border: 1px solid;
+				border-color: $white;
+			}
+		}
+	}
+	.quote{
+		p{
+			font-family: $montserrat;
+			font-weight: 400;
+			font-size: 1.5rem;
+			line-height: 1.58;
+			letter-spacing: -0.025em;
+			color: $grayvar2;
+			text-align: center;
+			&:before,
+			&:after{
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+				box-sizing: border-box;
+				color: $purpledarker;
+			}
+			&:after{
+				content: "\f10e";
+			}
+			&:before{
+				content: "\f10d";
+			}
+		}
+		i{
+			color: $purpledarker;
+		}
+	}
+}
+#get-to-know-us{
+	padding-top: 155px;
+	padding-bottom: 150px;
+	background-image: linear-gradient(45deg, $gradient1 0%, $gradient2 100%), url("../images/get-to-know-us-bg.jpg");
+	background-size: cover;
+}
+.get-to-know-us{
+	text-align: center;
+	align-items: center;
+	h3{
+		font-family: $montserrat;
+		color: $white;
+		font-size: 2.25rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -0.05em;
+		margin-bottom: 20px;
+	}
+	p{
+		font-family: $lato;
+		color: $white;
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+	.get-to-know-us-btn{
+		a{
+			padding: 11px 20px;
+			background: $purpledarker;
+			border-radius: 3px;
+			border: none;
+			font-family: $lato;
+			color: $white;
+			font-size: 1.239rem;/* Approximation due to font substitution */
+			font-weight: 400;
+		}
+		.btn-margin{
+			margin-right: 11px;
+			margin-bottom: 15px;
+		}
+		// transform: scaleY(1.0092);/* width and height properties ommitted due to transform */
+	}
+}	

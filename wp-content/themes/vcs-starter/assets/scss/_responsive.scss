@@ -1,0 +1,284 @@
+@media all and (max-width: 992px) {
+	// .hero-container{
+	// 	position: static;
+	// }
+	.hero-container{
+		.responsive-menu-bar{
+			left: 0;
+			width: 100%;
+			z-index: 10;
+			justify-content: space-between;
+			background: $purpledarker;
+			.hamburger{
+				display: block;
+			}
+			.hero-logo-responsive{
+				display: block;
+				margin: 10px;
+			}
+		}
+	}
+	.header-menu{
+		.responsive-menu{
+			flex-direction: column;
+			position: fixed;
+			width: 100%;
+			z-index: 10;
+			padding-top: 0;
+			margin: 0;
+			.socials{
+				width: 100%;
+				flex-direction: column;
+				// top: 189px;
+				padding-bottom: 15px;
+				ul{
+					width: 90%;
+				}
+				.socials-text,
+				.socials-icons{
+					width: 90%;
+					align-items: flex-end;
+					li{
+						margin: 10px 0;
+					}
+				}
+				.socials-icons{
+					flex-direction: row;
+					justify-content: flex-end;
+					li{
+						margin-left: 15px;
+					}
+				}
+
+			}
+			.site-nav{
+				width: 100%;
+				ul{
+					width: 90%;	
+				}
+				li{
+					margin: 10px 0;
+				}
+			}
+			ul{
+				flex-direction: column;
+				align-items: flex-end;
+				li{
+					a{
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+
+	}
+	.hero-logo{
+		display: none;
+	}
+	.site-nav,
+	.socials{
+		visibility: hidden;
+		height: 0;
+		opacity: 0;
+		ul{
+			li{
+				height: 0;
+				max-height: 0;
+				transition: max-height 1s ease;
+			}
+		}
+	}
+	.burger-bg{
+		background-color: $purpledarker;
+	}
+	.active-menu{
+		visibility: visible;
+  		opacity: 1;
+  		height: auto;
+  		ul{
+  			li{
+  				height: auto;
+  				max-height: 35px;
+  			}
+  		}
+	}
+	.inbetween-section{
+		.inbetween-container{
+		padding: 75px 15px;
+		}
+	}
+}
+@media all and (max-width: 1050px) {
+	.inbetween-quotes,
+	.meet-the-team,
+	.call-to-action,
+	#get-to-know-us,
+	#blog-posts,
+	#about-us,
+	#footer,
+	#footer-copyright{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.inbetween-news{
+		.news-post{
+			padding: 30px 30px;
+		}
+	}
+	.meet-the-team{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.meet-the-team-container{
+		.team-photos,
+		.team-description{
+			width: 100%;
+			justify-content: center;
+		}
+		flex-direction: column;
+		.team-photos{
+			order: 2;
+			img{
+				width: calc(25% - 20px);
+				margin: 0 20px 20px 0;	
+			}
+		}
+		.team-description{
+			align-items: center;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+	html{
+		font-size: 14px;
+	}
+	.socials-icons{
+		i{
+			font-size: 14.8px;
+		}
+	}
+	.hero-headline{
+		padding-top: 175px;
+		h1{
+			line-height: 1.1;
+		}
+	}
+	.hero-contact{
+		justify-content: center;
+		.talk-to-us,
+		.chat-online-now{
+			width: 60%;
+			margin-bottom: 30px;
+		}
+	}
+	.news-post-container{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.news-posts{
+		width: 100%;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	#footer{
+		.footer-content{
+			flex-wrap: wrap;
+		}
+		.footer-socials,
+		.footer-tag-mailing{
+			width: 47.5%;
+		}
+		.footer-latest-news{
+			width: 100%;
+			.news-container{
+				.footer-latest-new:last-child{
+					&::after{
+					content: '';
+					}
+				}
+				flex-direction: row;
+				justify-content: center;
+				justify-content: space-between;
+				.footer-latest-new{
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px) {
+	#footer{
+		.footer-content{
+			.footer-latest-news{
+				.footer-latest-new{
+					width: 47.5%;
+				}
+			}
+		}
+	}
+	.meet-the-team-container{
+		.team-photos{
+			img{
+				width: calc(33% - 20px);	
+		    }
+		}
+	}
+}
+@media all and (max-width: 600px) {
+
+	#about-us{
+		.about-us-founder{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+	.meet-the-team-container{
+		.team-photos{
+			img{
+				width: calc(50% - 20px);	
+		    }
+		}
+	}
+	.hero-contact{
+		.talk-to-us,
+		.chat-online-now{
+			width: 80%;
+		}
+	}
+	#blog-posts{
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.blog-posts-container{
+		.blog-post{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+	.hero-headline{
+		h1{
+			line-height: 1.1;
+			font-size: 4.5rem;
+		}
+	}
+	#footer{
+		.footer-content{
+			.footer-socials,
+			.footer-tag-mailing{
+				width: 95%;
+				margin-bottom: 20px;
+			}
+			.footer-latest-news{
+				.footer-latest-new{
+					width: 95.5%;
+					.footer-latest-new-thumbnail-container{
+						width: 21%;
+					}
+					.footer-latest-new-container{
+						width: 75%;
+					}
+				}
+			}
+		}
+	}
+}

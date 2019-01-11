@@ -1,0 +1,68 @@
+#about-us{
+	padding-top: 90px;
+	padding-bottom: 85px;
+}
+.about-us-title,
+.about-us-founder{
+	align-items: center;
+}
+.about-us-title{
+	margin-bottom: 75px;
+	h2{
+		font-family: $montserrat;
+		font-weight: 700;
+		font-size: 2.8125rem;
+		line-height: 0.6667;
+		letter-spacing: -0.05em;
+		color: $purpledarker;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	p{
+		font-family: $lato;
+		font-weight: 400;
+		font: 1rem;
+		line-height: 1.875;
+		color: $darkgreen;
+		text-align: center;
+	}
+}
+.about-us-founders{
+	flex-wrap: wrap;
+}
+.about-us-founder{
+	width: 50%;
+	padding: 0 80px;
+	.founder-photo{
+		margin-bottom: 35px;
+		img{
+			border-radius: 50%;
+		}
+	}
+	.founder-firstname{
+		font-family: $lato;
+		font-weight: 400;
+		color: $purpledarker;
+		font-size: 1.875rem;
+		line-height: 0.833;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.founder-lastname{
+		font-family: $lato;
+		color: $darkgreen;
+		font-size: 1.125rem;
+		font-weight: 400;
+		line-height: 1.389;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.founder-description{
+		font-family: Lato;
+		color:  $darkgreen;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.563;
+		text-align: center;
+	}
+}

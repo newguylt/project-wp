@@ -1,0 +1,250 @@
+#hero {
+	// background-image: url("../images/hero-image.jpg");
+	background-size: cover;
+	.hero-gradient{
+		background: linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+	}
+}
+.hero-container{
+	padding-bottom: 158px;
+	.hamburger,
+	.hero-logo-responsive{
+		display: none;
+	}
+}
+.header-menu{
+	.responsive-menu{
+		width: 100%;
+		padding-top: 45px;
+		margin-bottom: 335px;
+		justify-content: space-between;
+		align-items: center;
+		.site-nav > ul,
+		.socials > .socials-text{
+				a{
+					position: relative;
+					font-size: 0.925rem;
+					font-family: $montserrat;
+					font-weight: 700;
+					color: $white;
+					text-transform: uppercase;
+					transition: 0.5s ease;
+					&:before,
+				    &:after {
+				        content: '';
+				        position: absolute;
+				        bottom: -4px;
+				        left: 0; right: 0;
+				        height: 1px;
+				        background-color: $white;
+				    }
+				    &:before {
+				        opacity: 0;
+				        transform: translateY(- $distance);
+				        transition: transform 0s $easeOutBack, opacity 0s;
+				    }
+				    &:after {
+				        opacity: 0;
+				        transform: translateY($distance/2);
+				        transition: transform $duration $easeOutBack, opacity $duration;
+				    }
+				    &:hover,
+				    &:focus {
+				        &:before,
+				        &:after {
+				            opacity: 1;
+				            transform: translateY(0);
+				        }
+				        &:before {
+				            transition: transform $duration $easeOutBack, opacity $duration;
+				        }
+				        &:after {
+				            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+				        }
+				    }
+				}
+			}
+		
+		.hero-logo{
+			width: 30%;
+			text-align: center;
+		}
+		.site-nav{
+			width: 35%;
+			ul{
+				width: 100%;
+				justify-content: space-between;
+			}
+		}
+		.socials{
+			width: 35%;
+			justify-content: space-between;
+			.socials-text{
+				width: 60%;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.socials-icons{
+				width: calc(40% - 10px);
+				align-items: center;
+				justify-content: flex-end;
+				li{
+					margin-left: 10px;
+					a{
+						width: 33px;
+						color: $white;
+						height: 33px;
+						text-align: center;
+						display: block;
+						line-height: 34px;
+						border-radius: 50%;
+					}
+					.hero-twitter-icon{
+						background: $lightblue;
+					}
+					.hero-facebook-icon{
+						background: $darkblue;
+					}
+				}
+			}
+		}
+	}
+}
+.hero-headline{
+	margin-bottom: 185px;
+	text-align: center;
+	h1{
+		font-family: $montserrat;
+		font-weight: 700;
+		font-size: 6rem;
+		line-height: 0.2714;
+		letter-spacing: -0.075em;
+		color: $white;
+		margin-bottom: 45px;
+	}
+	p{
+		font-family: $lato;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1.5833;
+		letter-spacing: 0.05em;
+		color: $white;
+	}
+}
+.hero-contact{
+	justify-content:space-between;
+	flex-wrap: wrap;
+
+	i{
+		font-size: 2.4rem;
+		width: 75px;
+		height: 75px;
+		text-align: center;
+		line-height: 75px;
+		border-radius: 50%;
+		background-color: $white;
+		transform: rotateY(180deg);
+		margin-bottom: 20px;
+	}
+		h2{
+		font-family: $montserrat;
+		font-size: 2.8125rem;
+		letter-spacing: -0.075em;
+		font-weight: 700;
+		color: $white;
+		margin-bottom: 9px;
+	}
+		p{
+		font-family: $lato;
+		font-size: 1rem;
+		letter-spacing: 0.005em;
+		font-weight: 400;
+		color: $white;
+		margin-bottom: 19px;
+	}
+	.fa-comment{
+		transform: none;
+	}
+	.talk-to-us,
+	.chat-online-now{
+		width: 47%;
+		align-items: center;
+		text-align: center;
+		// padding-top: 48px;
+		// padding-bottom: 45px;
+		padding: 48px 36px 45px 36px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+    }
+    .talk-to-us{
+    	// background-color: rgba(146, 41, 141, 0.7);
+    	i{
+    		color: $purpledarker;
+    	}
+		.wpcf7{
+			width: 100%;
+			input{
+				width: 100%;
+			}
+		}
+    	.callbackform{
+    		div:first-child{
+			width: 75%;
+			}
+			div:last-child{
+			width: 25%;
+			}
+			width: 100%;
+			border: 1px solid;
+			border-right: none;
+			border-radius: 5px;
+			border-color: #d7d7d7;
+			background-color: rgba(255, 255, 255, 0.1);
+			input{
+				background-color: rgba(255, 255, 255, 0.1);
+				font-size: 1rem;
+				color: $white;
+				border: none;
+				border-radius: 5px 0px 0px 5px;
+				padding: 17px 18px 17px 18px;
+				&::placeholder{
+					color: $white;
+					font-size: 1rem;
+				}
+			}
+			div{
+				button{
+					background-color: $white;
+					color: rgba(146, 41, 141, 0.7);
+					border:none;
+					width: 100%;
+					font-family: $lato;
+					font-weight: 700;
+					font-size: 1.125rem;
+					letter-spacing: -0.025em;
+					border-radius: 5px;
+					padding: 0;
+				}
+			}
+		}
+    }
+    .chat-online-now{
+    	// background-color: $lightblue;
+    	i{
+    		color: $lightblue;
+    	}
+    	a{
+    		text-align: center;
+    		background-color: $white;
+    		width: 100%;
+    		border-radius: 5px;
+    		border: none;
+    		color: $lightblue2;
+    		padding: 16.4px 0px;
+    		font-size: 1.125rem;
+    		font-family: $lato;
+    		font-weight: 700;
+    		letter-spacing: -0.025em;
+    	}
+    }
+}

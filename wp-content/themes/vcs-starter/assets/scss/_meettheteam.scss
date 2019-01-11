@@ -1,0 +1,47 @@
+.meet-the-team{
+	background-color: $darkpurple;
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+.meet-the-team-container{
+	.team-photos{
+		flex-wrap: wrap;
+		width: 47%;
+		margin-right: 45px;
+		img{
+			width: calc(50% - 23px);
+			margin: 0 23px 23px 0;
+		}
+	}
+	.team-description{
+		width: 45%;
+		text-align: left;
+		h3{
+			font-family: $montserrat;
+			color: $white;
+			font-size: 2.815rem;
+			letter-spacing: -0.050em;
+			font-weight: 700;
+			padding-bottom: 8px;
+		}
+		h4{
+			font-family: $montserrat;
+			color: $white;
+			font-size: 1.5rem;
+			letter-spacing: -0.050em;
+			font-weight: 700;
+			padding-bottom: 18px;
+		}
+		p{
+			font-family: $lato;
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.5625;
+			color: $gray;
+		}
+		.team-description-firstp{
+			padding-bottom: 25px;
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+.services-slider{
+	background-color: $grayvar1;
+}
+.services-container{
+	padding: 160px 67.5px 100px 67.5px;
+}
+.owl-nav{
+	.owl-prev{
+		span{
+			position: absolute;
+			top: 40%;
+			left: -140px;
+			font-size: 4rem;
+		}
+	}
+	.owl-next{
+		span{
+			position: absolute;
+			top: 40%;
+			right: -140px;
+			font-size: 4rem;
+		}
+	}	
+}
+.service{
+	img{
+		margin-bottom: 15px;
+	}
+	.service-title{
+		text-align: center;
+		font-family: $montserrat;
+		font-weight: 700;
+		font-size: 2.813rem;
+		line-height: 0.667;
+		color: $darkpurple;
+		margin-bottom: 15px;
+		letter-spacing: -0.050em;
+
+	}
+	.service-description{
+		text-align: center;
+		font-family: $lato;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.875;
+		color: $darkgreen;
+		margin-bottom: 12px;
+	}
+}

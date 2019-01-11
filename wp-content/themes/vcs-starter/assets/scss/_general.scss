@@ -1,0 +1,21 @@
+.container {
+	margin: 0 auto;
+	max-width: 1075px;
+}
+.flex-container{
+	display: flex;
+}
+.column{
+	flex-direction: column;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+.btn{
+	&:hover{
+		cursor: pointer;
+	}
+}
